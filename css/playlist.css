@@ -202,54 +202,7 @@ body {
 .playlist li:not(:last-child) {
     border-bottom: 1px solid var(--background-color);
   }
-.playlist {
-    height: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-  }
-  
-/* Playlist Container */
-#playlist-songs {
-    width: 100%;
-    height: 340px;
-    background-color: var(--foreground-color);
-    border-radius: 5px;
-    padding: 10px;
-    overflow-y: scroll;
-    scrollbar-width: thin; 
-    scrollbar-color: var(--background-color) var(--secondary-color);
-}
 
-/* Custom Scrollbar for WebKit Browsers (Chrome, Safari, etc.) */
-#playlist-songs::-webkit-scrollbar {
-    width: 8px;
-}
-
-#playlist-songs::-webkit-scrollbar-track {
-    background: var(--background-color); 
-    border-radius: 4px;
-}
-
-#playlist-songs::-webkit-scrollbar-thumb {
-    background: var(--secondary-color); 
-    border-radius: 4px; 
-}
-
-#playlist-songs::-webkit-scrollbar-thumb:hover {
-    background: var(--highlight-color);
-}
-  
-.playlist-song {
-    display: flex;
-    height: 55px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-  }
-  
 [aria-current="true"] {
     background-color: var(--background-color);
   }
@@ -367,7 +320,7 @@ body {
     color: var(--primary-color);
   }
 .playlist {
-    height: auto;
+    height: 320px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -409,9 +362,10 @@ body {
 
 #playlist-songs {
     width: 100%;
-    height: 155px;
+    height: 400x;
     background-color: var(--foreground-color);
     border-radius: 5px;
+    margin: 0;
     padding: 10px;
     overflow-y: scroll;
     scrollbar-width: thin;
@@ -439,7 +393,7 @@ body {
 
 .playlist-song {
     display: flex;
-    height: 55px;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
