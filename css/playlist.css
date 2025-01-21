@@ -320,7 +320,7 @@ body {
     color: var(--primary-color);
   }
 .playlist {
-    height: 320px;
+    height: 380px;
     padding: 10px;
     display: flex;
     flex-direction: column;
