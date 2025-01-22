@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/album.css">
     <script src="JavaScript/album.js"></script>
     <title>Music Player App</title>
+    <link rel="icon" href="img/broswer.png" type="image/jpg">
 </head>
 <body>
     <nav class="nav-bar">
@@ -49,6 +50,98 @@
                 </a>
             </li>
         </ul>
-    </nav>
+  </nav>
+ 
+
+
+  
+      <div class="main">
+        <div class="player-bar">
+          <div class="container-song">
+            <form action="#" id="search-form">
+              <input name="q" type="text" placeholder="Search New Song" autocomplete="off" autofocus>
+            </form>
+          </div>
+        </div>
+        <!-- Popular Artists Section -->
+        <div id="popular-artists" class="section">
+          <h2>Popular Artists</h2>
+          <div class="grid">
+            <!-- Each artist can be added as a card -->
+            <div class="artist-card">
+              <img src="/img/JeDavet.jpg" alt="Artist 1">
+              <div class="name">G-devith</div>
+            </div>
+            <div class="artist-card">
+              <img src="img/Tena.jpg" alt="Artist 2">
+              <div class="name">Tena</div>
+            </div>
+            <div class="artist-card">
+              <img src="img/Chansey Ma.jpg" alt="Artist 3">
+              <div class="name">Tan chan Seyma</div>
+            </div>
+            <div class="artist-card">
+              <img src="img/Vanda.jpg" alt="Artist 3">
+              <div class="name">Vanda</div>
+            </div>
+            <div class="artist-card">
+              <img src="img/Kanha.jpg" alt="Artist 3">
+              <div class="name">Aok Sokunkhan</div>
+            </div>
+          
+          </div>
+        </div>
+    
+        <!-- Popular Albums Section -->
+        <div id="popular-albums" class="section">
+          <h2>Popular Albums</h2>
+          <div class="grid">
+            <!-- Each album can be added as a card -->
+            <div class="album-card">
+              <img src="album1.jpg" alt="Album 1">
+              <div class="name">Album 1</div>
+            </div>
+            <div class="album-card">
+              <img src="album2.jpg" alt="Album 2">
+              <div class="name">Album 2</div>
+            </div>
+            <div class="album-card">
+              <img src="album3.jpg" alt="Album 3">
+              <div class="name">Album 3</div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Free Albums Section -->
+        <div id="albums-free" class="section">
+          <h2>Free Albums</h2>
+          <div class="grid">
+            <!-- Each free album can be added as a card -->
+            <div class="free-album-card">
+              <img src="free_album1.jpg" alt="Free Album 1">
+              <div class="name">Free Album 1</div>
+            </div>
+            <div class="free-album-card">
+              <img src="free_album2.jpg" alt="Free Album 2">
+              <div class="name">Free Album 2</div>
+            </div>
+            <div class="free-album-card">
+              <img src="free_album3.jpg" alt="Free Album 3">
+              <div class="name">Free Album 3</div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Modal for Song Details -->
+        <div id="songs-modal" class="modal">
+          <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <!-- Songs will be dynamically populated here -->
+            <p>Song details will appear here...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 </body>
 </html>
