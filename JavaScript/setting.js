@@ -1,18 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeRadios = document.querySelectorAll('input[name="theme"]');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+        document.body.className = savedTheme;
+        document.querySelector(`input[value="${savedTheme}"]`).checked = true;
+    }
 
     themeRadios.forEach(radio => {
         radio.addEventListener('change', () => {
             const selectedTheme = radio.value;
-
-            if (selectedTheme === 'light') {
-                document.body.className = 'light';
-            } else if (selectedTheme === 'dark') {
-                document.body.className = 'dark';
-            } else if (selectedTheme === 'system') {
-                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                document.body.className = prefersDarkScheme ? 'dark' : 'light';
-            }
+            document.body.className = selectedTheme;
+            localStorage.setItem('theme', selectedTheme);
         });
     });
 });
