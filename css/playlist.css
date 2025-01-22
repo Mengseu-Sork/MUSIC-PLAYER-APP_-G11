@@ -78,13 +78,13 @@ body {
     justify-content: center;
     align-items: center;
     row-gap: 5px;
-    margin-left: 9.7%;
+    margin-left: 12%;
   }
 
 
 .playlist,
 .player{
-    width: 720px;
+    width: 780px;
     background-color: var(--background-color);
     border: 3px solid var(--foreground-color);
   }
@@ -120,7 +120,7 @@ body {
 #search-form input {
     background-color: var(--app-background-color);
     color: var(--primary-color);
-    width: 695px;
+    width: 755px;
     font-size: 14px;
     padding: 6px 15px;
     border: 1px solid rgb(103, 103, 103);
@@ -155,7 +155,7 @@ body {
 .player-content {
     display: flex;
     background-color: var(--foreground-color);
-    width: 695px;
+    width: 755px;
     height: 310px;
     column-gap: 8px;
     align-items: center;
@@ -168,7 +168,7 @@ body {
   }
   
 #player-album-art img {
-    width: 235px;
+    width: 280px;
     height: 260px;
     display: block;
   }
@@ -180,7 +180,7 @@ body {
     padding: 14px;
     background-color: var(--background-color);
     height: 270px; 
-    width: 425px;
+    width: 440px;
   }
   
 .player-display-song-artist {
