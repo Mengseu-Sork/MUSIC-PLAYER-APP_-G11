@@ -84,13 +84,13 @@ body {
 
 .playlist,
 .player{
-    width: 780px;
+    width: 65%;
     background-color: var(--background-color);
     border: 3px solid var(--foreground-color);
   }
   
 .player {
-    height: 350px;
+    height: 260pt;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -120,7 +120,7 @@ body {
 #search-form input {
     background-color: var(--app-background-color);
     color: var(--primary-color);
-    width: 755px;
+    width: 695px;
     font-size: 14px;
     padding: 6px 15px;
     border: 1px solid rgb(103, 103, 103);
@@ -155,7 +155,7 @@ body {
 .player-content {
     display: flex;
     background-color: var(--foreground-color);
-    width: 755px;
+    width: 99.5%;
     height: 310px;
     column-gap: 8px;
     align-items: center;
@@ -168,7 +168,7 @@ body {
   }
   
 #player-album-art img {
-    width: 280px;
+    width: 260px;
     height: 260px;
     display: block;
   }
@@ -180,7 +180,7 @@ body {
     padding: 14px;
     background-color: var(--background-color);
     height: 270px; 
-    width: 440px;
+    width: 400px;
   }
   
 .player-display-song-artist {
@@ -239,20 +239,20 @@ body {
   
 .playlist-song-title {
     font-size: 0.85rem;
-    width: 250px;
+    width: 160px;
     text-align: left;
   }
   
 .playlist-song-artist {
     font-size: 0.725rem;
-    width: 275px;
+    width: 120px;
   }
   
 .playlist-song-duration {
     font-size: 0.725rem;
     margin: auto;
     font-family: var(--font-headline);
-    width: 60px;
+    width: 20px;
   }
   
 .playlist-song-delete {
