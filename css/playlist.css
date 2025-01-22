@@ -166,15 +166,31 @@ body {
   }
   
 #player-album-art {
-    width: 30%;
-    background-color: var(--secondary-color);
-    border: 6px solid var(--background-color);
+    width: 31%;
+  }
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.rotate-image {
+    animation: rotate 5s linear infinite;
+  }
+
+.rotate-image:hover {
+    animation: rotate 5s linear infinite;
   }
   
 #player-album-art img {
     width: 100%;
-    height: 280px;
+    height: 300px;
     display: block;
+    border-radius: 50%;
   }
   
 .player-display {
@@ -184,7 +200,7 @@ body {
     padding: 14px;
     background-color: var(--background-color);
     height: 290px; 
-    width: 68%;
+    width: 66%;
   }
   
 .player-display-song-artist {
