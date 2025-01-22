@@ -105,6 +105,7 @@ body {
 
 .container-song {
     padding: 0px;
+    width: 100%;
   }
 #search-form {
     width:100%;
@@ -115,7 +116,7 @@ body {
 #search-form input {
     background-color: var(--app-background-color);
     color: var(--primary-color);
-    width: 970px;
+    width: 100%;
     font-size: 14px;
     padding: 6px 15px;
     border: 1px solid rgb(103, 103, 103);
