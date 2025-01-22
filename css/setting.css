@@ -30,6 +30,8 @@ body {
   height: auto;
   display: flex;
   gap: 0;
+  margin: 0;
+  padding: 0;
 }
 .nav-bar {
   background-color: #1b1b32;
@@ -106,11 +108,13 @@ body.dark-theme {
     
   }
   .card-body{
+    width: 100%;
     background-color: #1b1b32;
     color: #fff;
     
   }
   .card{
+    width: 100%;
     background: #4d4d62;
     color: #fff;
   }
