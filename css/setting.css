@@ -115,6 +115,6 @@ body.dark-theme {
   }
   .card{
     width: 100%;
-    background: #4d4d62;
-    color: #fff;
+    background: white;
+    color:black;
   }
