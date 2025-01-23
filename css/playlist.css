@@ -30,6 +30,7 @@ body {
     height: auto;
     display: flex;
     gap: 0;
+    overflow: hidden;
 }
 .nav-bar {
     background-color: #1b1b32;
@@ -78,14 +79,15 @@ body {
 .container{
   margin: 0;
   padding: 0;
-  width: 79%;
-  margin-left: 20.7%;
+  width: 79.8%;
+  height: 99vh;
+  margin-left: 20.2%;
 }
 
 
 .playlist,
 .player{
-    width: 99.5%;
+    width: 99.7%;
     background-color: var(--background-color);
     border: 3px solid var(--foreground-color);
     margin-top: 2px;
@@ -117,8 +119,6 @@ body {
 #search-form {
     width:100%;
     margin: 0;
-    /* position: relative; */
-    right: 5px;
   }
 #search-form input {
     background-color: var(--app-background-color);
@@ -128,18 +128,19 @@ body {
     padding: 6px 15px;
     border: 1px solid rgb(103, 103, 103);
     border-radius: 2px;
+    position: relative;
+    top: 15px;
   }
 #search-form button {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    bottom: 0;
+    position: relative;
+    left: 94%;
+    top: -16px;
     background-color: transparent;
     outline: none;
     border: none;
     width: 3rem;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     cursor: pointer;
     color: var(--secondary-color);
   }
@@ -188,9 +189,11 @@ body {
   
 #player-album-art img {
     width: 100%;
-    height: 300px;
+    height: 305px;
     display: block;
     border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
   }
   
 .player-display {
@@ -240,32 +243,35 @@ body {
     column-gap: 7px;
     padding: 5px 20px;
     font-family: var(--font-family);
+    cursor: pointer;
   }
   
 #player-song-title,
 #player-song-artist {
     margin: 0;
+    text-align: center;
   }
   
 #player-song-artist {
     color: var(--highlight-color);
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   
 #player-song-title {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
 .playlist-song-title {
     font-size: 0.85rem;
     width: 160px;
-    text-align: left;
+    text-align: center;
   }
   
 .playlist-song-artist {
     font-size: 0.725rem;
     width: 120px;
+    text-align: center;
   }
   
 .playlist-song-duration {
@@ -360,6 +366,7 @@ body {
 }
 
 .parallel-lines {
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     row-gap: 6px;
@@ -428,6 +435,7 @@ body {
 }
 
 .playlist-song-info {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -440,20 +448,20 @@ body {
 
 .playlist-song-title {
     font-size: 0.85rem;
-    width: 260px;
+    width: 80%;
     text-align: left;
 }
 
 .playlist-song-artist {
     font-size: 0.725rem;
-    width: 275px;
+    width: 50%;
 }
 
 .playlist-song-duration {
     font-size: 0.725rem;
     margin: auto;
     font-family: var(--font-headline);
-    width: 60px;
+    width: 5%;
 }
 
 .playlist-song-delete {
