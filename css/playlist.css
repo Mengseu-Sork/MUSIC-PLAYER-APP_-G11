@@ -167,7 +167,9 @@ body {
   }
   
 #player-album-art {
+    margin-top: 15px;
     width: 31%;
+    height: 100%;
   }
 
 @keyframes rotate {
