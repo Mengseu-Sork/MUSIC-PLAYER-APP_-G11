@@ -18,7 +18,6 @@ const firebaseConfig = {
   messagingSenderId: "719541221058",
   appId: "1:719541221058:web:ad119eee1d0ecb7e0c2d5b"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
@@ -28,12 +27,12 @@ const db = getFirestore(app);
 // Function to add data to Firestore
 async function addData(data) {
   try {
-    const docRef = await addDoc(collection(db, "music_dbsong"), {
+    const docRef = await addDoc(collection(db, "music_song"), {
       id: data.id,
       title: data.title,
       artist: data.artist,
-      image: data.image,
       duration: data.duration,
+      image: data.image,
       music: data.music,
       currentTime: data.currentTime
     });
@@ -50,9 +49,9 @@ fetch("../database/datasong.json")
         addData(song);
     });
   });
-// Function to fetch data from Firestore
+// // Function to fetch data from Firestore
 async function fetchData() {
-    const querySnapshot = await getDocs(collection(db, "music_dbsong"));
+    const querySnapshot = await getDocs(collection(db, "music_song"));
     querySnapshot.forEach((doc) => {
       const data = doc.data();
       console.log("Fetching data: ", data);
@@ -61,3 +60,4 @@ async function fetchData() {
 
   // Call the function to fetch data
   fetchData();
+
