@@ -38,9 +38,9 @@ body {
   width: 20%;;
   height: 99vh;
   position: fixed;
-  margin-top: 5px;
+  margin-top: 3px;
   padding: 20px;
-  margin-left: 5px;
+  margin-left: 0px;
   border: 3px solid var(--foreground-color);
 }
 
@@ -104,7 +104,7 @@ body.dark-theme {
     width: 80%;
     height: 100vh;
     margin-left: 20%;
-    margin-top: 5px
+    margin-top: 3px;
     
   }
   .card-body{
@@ -117,4 +117,6 @@ body.dark-theme {
     width: 100%;
     background: white;
     color:black;
+    margin: 0;
+    border: none;
   }
