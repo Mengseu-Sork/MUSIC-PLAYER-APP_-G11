@@ -137,13 +137,15 @@
                 oninput="onVolumeInput()"
               />
             </div>
-            <div class="progress" >
+            <div class="progress-bar-container">
+              <div class="progress" >
                 <input class="progress-bar" type="range" id="progressSlider" class="form-range" min="0"
                       max="100" value="0" step="1" style="width: 100%;" oninput="onSliderInput()">
-            </div>
-            <div class="Time-deplay">
+              </div>
+              <div class="Time-deplay">
                   <span id="currentTime">0:00</span>
                   <span id="totalDuration">0:00</span>
+            </div>
             </div>
           </div>
         </div>
@@ -164,5 +166,6 @@
         <ul id="playlist-songs"></ul>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
