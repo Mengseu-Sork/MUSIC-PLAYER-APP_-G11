@@ -3,20 +3,11 @@ function getData() {
     fetch("../database/datasong.json")
         .then(response => response.json())
         .then(data => {
-            // Check if song data exists in localStorage
-            const storedSongs = localStorage.getItem("songs");
-            let songs = storedSongs ? JSON.parse(storedSongs) : data;
-
             // Initialize user data
             const userData = {
-                songs: songs,
+                songs: data,
                 currentSong: null,
             };
-
-            // Save the initial song data to localStorage if it doesn't exist
-            if (!storedSongs) {
-                localStorage.setItem("songs", JSON.stringify(data));
-            }
 
             // DOM Elements
             const previousButton = document.getElementById("previous");
@@ -55,10 +46,10 @@ function getData() {
                     console.error("Song not found");
                     return;
                 }
+
                 audio.src = '../music/' + song.music; // Set the audio source
                 audio.title = song.title;
                 audio.currentTime = song.currentTime || 0; // Start from the beginning or saved time
-                audio.loop = true;
 
                 userData.currentSong = song; // Update the current song
                 playButton.classList.add("playing"); // Update UI
@@ -147,9 +138,6 @@ function getData() {
                 setPlayerDisplay();
                 highlightCurrentSong();
                 setPlayButtonAccessibleText();
-
-                // Update localStorage with shuffled songs
-                localStorage.setItem("songs", JSON.stringify(userData.songs));
             };
 
             // Delete a song by ID
@@ -165,9 +153,6 @@ function getData() {
                 highlightCurrentSong();
                 setPlayButtonAccessibleText();
 
-                // Update localStorage after deleting a song
-                localStorage.setItem("songs", JSON.stringify(userData.songs));
-
                 if (userData.songs.length === 0) {
                     const resetButton = document.createElement("button");
                     const resetText = document.createTextNode("Reset Playlist");
@@ -182,9 +167,6 @@ function getData() {
                         renderSongs(userData.songs);
                         setPlayButtonAccessibleText();
                         resetButton.remove();
-
-                        // Update localStorage with the original data
-                        localStorage.setItem("songs", JSON.stringify(data));
                     });
                 }
             };
@@ -388,8 +370,8 @@ function getData() {
                         searchForm.submit();
                     } else if (transcript.startsWith("play")) {
                         const songTitle = transcript.replace("play", "").trim();
-                        const song = userData.songs.find(s =>
-                            s.title.toLowerCase().includes(songTitle) ||
+                        const song = userData.songs.find(s => 
+                            s.title.toLowerCase().includes(songTitle) || 
                             s.artist.toLowerCase().includes(songTitle)
                         );
                         if (song) {
@@ -422,9 +404,9 @@ function getData() {
 
             const searchSongs = () => {
                 const query = searchFormInput.value.toLowerCase().trim();
-                const filteredSongs = query === ""
-                    ? userData.songs
-                    : userData.songs.filter(song =>
+                const filteredSongs = query === "" 
+                    ? userData.songs 
+                    : userData.songs.filter(song => 
                         song.title.toLowerCase().includes(query)
                     );
                 renderSongs(filteredSongs);
