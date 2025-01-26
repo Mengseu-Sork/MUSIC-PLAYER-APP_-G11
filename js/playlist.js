@@ -47,7 +47,7 @@ function getData() {
                     return;
                 }
 
-                audio.src = song.src; // Set the audio source
+                audio.src = '../music/' + song.music; // Set the audio source
                 audio.title = song.title;
                 audio.currentTime = song.currentTime || 0; // Start from the beginning or saved time
 

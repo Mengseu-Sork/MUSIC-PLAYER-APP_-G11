@@ -5,7 +5,7 @@
         "artist": "YCN RAKHIE FT. ALL3RGY",
         "image": "../img/YCN.jpg",
         "duration": "4:25",
-        "src": "../MUSIC/All3rgy_&_YCN_Rakhie_ផ្កាស្លា_She's_the_one_Official_Visualizer.mp3",
+        "music": "All3rgy_&_YCN_Rakhie_ផ្កាស្លា_She's_the_one_Official_Visualizer.mp3",
         "currentTime": 0
     },
     {
@@ -14,7 +14,7 @@
         "artist": "Ly Ft JosieImanuel",
         "image": "../img/វង្វេង.webp",
         "duration": "2:05",
-        "src": "../MUSIC/Ly_Lost_In_Your_Eyes_វង្វេងក្នុងកែវភ្នែកអូន_feat_JosieImanuel_Visualizer.mp3",
+        "music": "Ly_Lost_In_Your_Eyes_វង្វេងក្នុងកែវភ្នែកអូន_feat_JosieImanuel_Visualizer.mp3",
         "currentTime": 0
     },
     {
@@ -23,7 +23,7 @@
         "artist": "Sann Thanak",
         "image": "../img/San Thank.jpg",
         "duration": "3:15",
-        "src": "../MUSIC/Sann_Tanak_អូសវ៉ាលី_ខ្ញុំអូសវ៉ាលី_ដើរចេញពីផ្ទះទាំងអារម្មណ៍នៅសោកសៅ.mp3",
+        "music": "Sann_Tanak_អូសវ៉ាលី_ខ្ញុំអូសវ៉ាលី_ដើរចេញពីផ្ទះទាំងអារម្មណ៍នៅសោកសៅ.mp3",
         "currentTime": 0
     },
     {
@@ -32,7 +32,7 @@
         "artist": "Tena",
         "image": "../img/Tena.jpg",
         "duration": "4:11",
-        "src": "../MUSIC/Tena - God, I'm Drunk (Official Audio).mp3",
+        "music": "Tena - God, I'm Drunk (Official Audio).mp3",
         "currentTime": 0
     },
     {
@@ -41,7 +41,7 @@
         "artist": "Tena",
         "image": "../img/Tena.jpg",
         "duration": "4:54",
-        "src": "../MUSIC/Tena - I Smoke Cause of You.mp3",
+        "music": "Tena - I Smoke Cause of You.mp3",
         "currentTime": 0
     },
     {
@@ -50,7 +50,7 @@
         "artist": "Tena",
         "image": "../img/Tena.jpg",
         "duration": "5:00",
-        "src": "../MUSIC/Tena - Love Is Singular  [Official Audio] Lyrics.mp3",
+        "music": "Tena - Love Is Singular  [Official Audio] Lyrics.mp3",
         "currentTime": 0
     },
     {
@@ -59,7 +59,7 @@
         "artist": "Tena",
         "image": "../img/Tena.jpg",
         "duration": "4:48",
-        "src": "../MUSIC/Tena - កុំស្រលាញ់បងអី Re-produce.mp3",
+        "music": "Tena - កុំស្រលាញ់បងអី Re-produce.mp3",
         "currentTime": 0
     },
     {
@@ -68,7 +68,7 @@
         "artist": "Tena",
         "image": "../img/Tena.jpg",
         "duration": "4:11",
-        "src": "../MUSIC/Tena - ខ្យល់ត្រជាក់.mp3",
+        "music": "Tena - ខ្យល់ត្រជាក់.mp3",
         "currentTime": 0
     },
     {
@@ -77,7 +77,7 @@
         "artist": "សំ​ សុវណ្ណារ៉ាក់",
         "image": "../img/សំ​ សុវណ្ណារ៉ាក់.jpg",
         "duration": "2:21",
-        "src": "../MUSIC/THE_HOMIE_ដល់ចាស់_Dol_Jas_Til_We_Are_Old_Official_Visual.mp3",
+        "music": "THE_HOMIE_ដល់ចាស់_Dol_Jas_Til_We_Are_Old_Official_Visual.mp3",
         "currentTime": 0
     },
     {
@@ -86,7 +86,7 @@
         "artist": "Vanda",
         "image": "../img/Vanda.jpg",
         "duration": "3:36",
-        "src": "../MUSIC/VANNDA_អាមុំបងអើយ_BAD_LIL_BOO_OFFICIAL_MUSIC_VIDEO_2.mp3",
+        "music": "VANNDA_អាមុំបងអើយ_BAD_LIL_BOO_OFFICIAL_MUSIC_VIDEO_2.mp3",
         "currentTime": 0
     },
     {
@@ -95,7 +95,7 @@
         "artist": "Sann Thanak",
         "image": "../img/San Thank.jpg",
         "duration": "4:31",
-        "src": "../MUSIC/ជីវិតកញ្ជះគេ (Sann Thanak).mp3",
+        "music": "ជីវិតកញ្ជះគេ (Sann Thanak).mp3",
         "currentTime": 0
     },
     {
@@ -104,7 +104,7 @@
         "artist": "KDo P Sand",
         "image": "../img/KDo P Sand.jpg",
         "duration": "5:10",
-        "src": "../MUSIC/ដឹងទេថានឹក​_Deng_te_tha_Nek_By_KDo_P_Sand_Official_MV_.mp3",
+        "music": "ដឹងទេថានឹក​_Deng_te_tha_Nek_By_KDo_P_Sand_Official_MV_.mp3",
         "currentTime": 0
     },
     {
@@ -113,7 +113,7 @@
         "artist": "Noly Records",
         "image": "../img/Noly Records.jpg",
         "duration": "3:53",
-        "src": "../MUSIC/ធំជាងវេហា - Noly Records.mp3",
+        "music": "ធំជាងវេហា - Noly Records.mp3",
         "currentTime": 0
     },
     {
@@ -122,7 +122,7 @@
         "artist": "Taa Zvet",
         "image": "../img/Taa Zvet.jpg",
         "duration": "4:54",
-        "src": "../MUSIC/ផ្សងជួបនារីសាមញ្ញធម្មតា.mp3",
+        "music": "ផ្សងជួបនារីសាមញ្ញធម្មតា.mp3",
         "currentTime": 0
     },
     {
@@ -131,7 +131,7 @@
         "artist": "Han Record",
         "image": "../img/Han Record.jpg",
         "duration": "4:54",
-        "src": "../MUSIC/សាមញ្ញដូចបង - Han Record [Lyric Audio].mp3",
+        "music": "សាមញ្ញដូចបង - Han Record [Lyric Audio].mp3",
         "currentTime": 0
     },
     {
@@ -140,25 +140,25 @@
         "artist": "Vanda",
         "image": "../img/Vanda.jpg",
         "duration": "4:02",
-        "src": "../MUSIC/Beby MAMA.mp3",
+        "music": "Beby MAMA.mp3",
         "currentTime": 0
     },
     {
         "id": 16,
         "title": "Ghost Writer",
-        "artist": "Je Devet",
+        "artist": "G-Diveth",
         "image": "../img/JeDavet.jpg",
         "duration": "3:17",
-        "src": "../MUSIC/Ghost Writer.mp3",
+        "music": "Ghost Writer.mp3",
         "currentTime": 0
     },
     {
         "id": 17,
         "title": "Hot Boy",
-        "artist": "Je Devet",
+        "artist": "G-Diveth",
         "image": "../img/JeDavet.jpg",
         "duration": "3:32",
-        "src": "../MUSIC/Hot Boy.mp3",
+        "music": "Hot Boy.mp3",
         "currentTime": 0
     },
     {
@@ -167,7 +167,7 @@
         "artist": "Aok Sokunkanha",
         "image": "../img/Kanha.jpg",
         "duration": "3:41",
-        "src": "../MUSIC/The Q.mp3",
+        "music": "The Q.mp3",
         "currentTime": 0
     },
     {
@@ -176,16 +176,16 @@
         "artist": "Vanda",
         "image": "../img/Vanda.jpg",
         "duration": "5:39",
-        "src": "../MUSIC/Time to Rice.mp3",
+        "music": "Time to Rice.mp3",
         "currentTime": 0
     },
     {
         "id": 20,
-        "title": "កន្រឹមHip hob",
+        "title": "កន្រឹមHip",
         "artist": "Vanda",
         "image": "../img/Vanda.jpg",
-        "duration": "3:39",
-        "src": "../MUSIC/កន្រឹមHip hob.mp3",
+        "duration": "3:36",
+        "music": "កន្រឹមHip hob.mp3",
         "currentTime": 0
     },
     {
@@ -194,16 +194,16 @@
         "artist": "Tan Chanseyma",
         "image": "../img/Chansey Ma.jpg",
         "duration": "3:27",
-        "src": "../MUSIC/កុលាបមានបន្លា.mp3",
+        "music": "កុលាបមានបន្លា.mp3",
         "currentTime": 0
     },
     {
         "id": 22,
         "title": "គាំងចិត្ត",
-        "artist": "Je Devet",
+        "artist": "G-Diveth",
         "image": "../img/JeDavet.jpg",
         "duration": "3:16",
-        "src": "../MUSIC/គាំងចិត្ត.mp3",
+        "music": "គាំងចិត្ត.mp3",
         "currentTime": 0
     },
     {
@@ -212,7 +212,7 @@
         "artist": "Tan Chanseyma",
         "image": "../img/Chansey Ma.jpg",
         "duration": "5:11",
-        "src": "../MUSIC/ដណ្តឹងអូនទៅ.mp3",
+        "music": "ដណ្តឹងអូនទៅ.mp3",
         "currentTime": 0
     },
     {
@@ -221,7 +221,7 @@
         "artist": "Preap Sovath",
         "image": "../img/Sovath.jpg",
         "duration": "3:43",
-        "src": "../MUSIC/ថ្នមអើយថ្នម.mp3",
+        "music": "ថ្នមអើយថ្នម.mp3",
         "currentTime": 0
     },
     {
@@ -230,16 +230,16 @@
         "artist": "Tan Chanseyma",
         "image": "../img/Chansey Ma.jpg",
         "duration": "3:53",
-        "src": "../MUSIC/ធំជាងវេហា - Noly Records.mp3",
+        "music": "ធំជាងវេហា - Noly Records.mp3",
         "currentTime": 0
     },
     {
         "id": 26,
         "title": "នាងអើយ",
-        "artist": "Je Devet",
+        "artist": "G-Diveth",
         "image": "../img/JeDavet.jpg",
         "duration": "3:49",
-        "src": "../MUSIC/នាងអើយ.mp3",
+        "music": "នាងអើយ.mp3",
         "currentTime": 0
     },
     {
@@ -248,7 +248,7 @@
         "artist": "Tan Chanseyma",
         "image": "../img/Chansey Ma.jpg",
         "duration": "3:49",
-        "src": "../MUSIC/បងកុំបែរឆ្វេង.mp3",
+        "music": "បងកុំបែរឆ្វេង.mp3",
         "currentTime": 0
     },
     {
@@ -257,7 +257,7 @@
         "artist": "Tan Chanseyma",
         "image": "../img/Chansey Ma.jpg",
         "duration": "4:14",
-        "src": "../MUSIC/បំផ្លាញបេះដូង.mp3",
+        "music": "បំផ្លាញបេះដូង.mp3",
         "currentTime": 0
     },
     {
@@ -266,7 +266,7 @@
         "artist": "Vanda",
         "image": "../img/Vanda.jpg",
         "duration": "2:58",
-        "src": "../MUSIC/បារមី.mp3",
+        "music": "បារមី.mp3",
         "currentTime": 0
     },
     {
@@ -275,16 +275,16 @@
         "artist": "Preap Sovath",
         "image": "../img/Sovath.jpg",
         "duration": "2:58",
-        "src": "../MUSIC/អូនកុំបែកឆ្វែង.mp3",
+        "music": "អូនកុំបែកឆ្វែង.mp3",
         "currentTime": 0
     },
     {
         "id": 31,
         "title": "មហានគរ",
-        "artist": "Je Devet",
+        "artist": "G-Diveth",
         "image": "../img/JeDavet.jpg",
         "duration": "4:36",
-        "src": "../MUSIC/មហានគរ.mp3",
+        "music": "មហានគរ.mp3",
         "currentTime": 0
     },
     {
@@ -293,7 +293,7 @@
         "artist": "Aok Sokunkanha",
         "image": "../img/Kanha.jpg",
         "duration": "4:53",
-        "src": "../MUSIC/រស់ជាខ្លួនឯង.mp3",
+        "music": "រស់ជាខ្លួនឯង.mp3",
         "currentTime": 0
     },
     {
@@ -302,7 +302,7 @@
         "artist": "Preap Sovath",
         "image": "../img/Sovath.jpg",
         "duration": "6:08",
-        "src": "../MUSIC/សាកមន្តអាគមន៍.mp3",
+        "music": "សាកមន្តអាគមន៍.mp3",
         "currentTime": 0
     },
     {
@@ -311,7 +311,7 @@
         "artist": "Aok Sokunkanha",
         "image": "../img/Kanha.jpg",
         "duration": "4:26",
-        "src": "../MUSIC/ស្នាមស្នេហ៏សមុទ្ររាម.mp3",
+        "music": "ស្នាមស្នេហ៏សមុទ្ររាម.mp3",
         "currentTime": 0
     },
     {
@@ -320,7 +320,7 @@
         "artist": "Aok Sokunkanha",
         "image": "../img/Kanha.jpg",
         "duration": "4:32",
-        "src": "../MUSIC/ស្រលាញ់បងដល់បេះដូងលែងលោត.mp3",
+        "music": "ស្រលាញ់បងដល់បេះដូងលែងលោត.mp3",
         "currentTime": 0
     },
     {
@@ -329,7 +329,7 @@
         "artist": "Aok Sokunkanha",
         "image": "../img/Kanha.jpg",
         "duration": "4:14",
-        "src": "../MUSIC/ស្នាមស្នេហ៏សមុទ្ររាម.mp3",
+        "music": "ស្នាមស្នេហ៏សមុទ្ររាម.mp3",
         "currentTime": 0
     }
 ]
