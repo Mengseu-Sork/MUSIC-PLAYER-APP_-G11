@@ -289,8 +289,6 @@ color: var(--primary-color);
   margin-top: 20px; 
   margin-left: 20px;
 }
-
-
 /* Album Container */
 .album-container, .free-album-card-container {
   display: flex;
@@ -299,8 +297,6 @@ color: var(--primary-color);
   gap: 15px;
   
 }
-
-
 /* Responsive for Tablets and iPads */
 @media screen and (max-width: 768px) { 
   .nav-bar{
@@ -383,8 +379,6 @@ color: var(--primary-color);
   }
 
 }
-
-
 /* For Phones and Smaller Devices */
 @media screen and (max-width: 480px) {
    
