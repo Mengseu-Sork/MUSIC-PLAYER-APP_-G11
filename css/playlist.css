@@ -360,7 +360,7 @@ color: var(--primary-color);
   color: var(--primary-color);
 }
 .playlist {
-  height: 45vh;
+  height: 50vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
