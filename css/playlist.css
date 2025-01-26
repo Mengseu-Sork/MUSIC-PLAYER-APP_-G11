@@ -563,7 +563,8 @@ color: var(--primary-color);
     .playlist-bar,
     .player-content,
     #playlist-songs {
-      width: 100%;
+      width: 95%;
+      margin-left: 35px;
     }
   
     .playlist-song {
@@ -692,7 +693,6 @@ color: var(--primary-color);
 
 
   .container{
-    /* display: none; */
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -741,6 +741,7 @@ color: var(--primary-color);
     .player-content,
     #playlist-songs {
       width: 100%;
+      margin-left: 0;
     }
   
     .playlist-song {
