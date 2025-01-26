@@ -30,27 +30,29 @@ body {
   height: auto;
   display: flex;
   gap: 0;
+  margin: 0;
+  padding: 0;
 }
 .nav-bar {
   background-color: #1b1b32;
-  width: 20%;;
-  height: 99vh;
+  width: 15%;;
+  height: 99.7vh;
   position: fixed;
-  margin-top: 5px;
+  margin-top: 1px;
   padding: 20px;
-  margin-left: 5px;
   border: 3px solid var(--foreground-color);
 }
 
 .logo{
   height: 50px;
-  width: 90%;
+  width: 100%;
+  text-align: center;
 }
 
 
 .logo h1 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 26px;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-right: 20px;
   margin-top: 10px;
@@ -78,7 +80,6 @@ body {
 
 
 
-
 /* Custom CSS for minor overrides */
 body.dark-theme {
     background-color: #333;
@@ -99,18 +100,144 @@ body.dark-theme {
     color: #fff;
   }
   .container{
-    width: 80%;
-    height: 100vh;
-    margin-left: 20%;
-    margin-top: 5px
+    width: 84.7%;
+    height: auto;
+    margin-left: 15.3%;
+    margin-top: 3px;
+    padding: 0;
     
   }
   .card-body{
+    width: 100%;
     background-color: #1b1b32;
     color: #fff;
     
   }
   .card{
-    background: #4d4d62;
-    color: #fff;
+    width: 100%;
+    background: white;
+    color:black;
+    margin: 0;
+    padding: 0;
+    border: none;
   }
+
+
+@media (max-width: 768px) {
+  .nav-bar{
+      background-color: var(--background-color);
+      width: 20%;
+      margin-top: 5px;
+      padding: 10px;
+      border-bottom: 2px solid var(--foreground-color);
+      position: fixed;
+      height: 99.9vh;
+    }
+  .logo {
+      height: 5vh;
+      width: 100%;
+    }
+  .logo img{
+      width: 60px;
+      height: 40px;
+  }
+  .logo h1{
+      font-weight: bold;
+      font-family: var(--font-headline);
+      font-size: 14px;
+  }
+  .nav-bar ul{
+      padding: 5px;
+      font-size: 0.7rem;
+    }
+    
+    .container{
+      width: 80%;
+      height: auto;
+      margin-left: 20.5%;
+      margin-top: 3px;
+      padding: 0;
+      
+    }
+  
+}
+
+
+@media (max-width: 480px) {
+  body {
+    background-color: var(--foreground-color);
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .nav-bar {
+    width: 100%;
+    height: 8vh; 
+    padding: 1px; 
+    position: fixed;
+    bottom: 0;
+    border: none;
+    background-color: #1b1b32; 
+    z-index: 1000;
+  }
+
+  .nav-bar ul {
+    background-color: #1b1b32;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+  }
+
+  .nav-bar ul li a span {
+    display: none;
+  }
+  .nav-bar ul li a i{
+    position: relative;
+    bottom: 65px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo img, .logo h1 {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 3px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 100%;
+    background: white;
+    color: black;
+    border: none;
+  }
+
+  .card-body{
+    font-size: 15px;
+
+  }
+  .btn-primary{
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 3px;
+  }
+  .btn-warning{
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 3px;
+  }
+.p-3{
+  padding: 10px;
+}
+}

@@ -34,8 +34,8 @@ body {
 }
 .nav-bar {
   background-color: #1b1b32;
-  width: 20%;;
-  height: 99vh;
+  width: 15%;;
+  height: 99.7vh;
   position: fixed;
   margin-top: 1px;
   padding: 20px;
@@ -44,7 +44,7 @@ body {
 
 .logo{
   height: 50px;
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 
@@ -77,12 +77,13 @@ body {
   color: #f1be32 !important;
 }
 
+
 .container{
 margin: 0;
 padding: 0;
-width: 79.8%;
+width: 84.8%;
 height: 99vh;
-margin-left: 20.2%;
+margin-left: 15.2%;
 }
 
 
@@ -95,7 +96,7 @@ margin-left: 20.2%;
 }
 
 .player {
-  height: 60vh;
+  height: 55vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -110,7 +111,7 @@ justify-content: space-between;
 align-items: center;
 padding: 0 2px;
 width: 100%;
-height: 30px;
+height: 5vh;
 }
 
 .container-song {
@@ -161,16 +162,15 @@ color: var(--primary-color);
   display: flex;
   background-color: var(--foreground-color);
   width: 99.5%;
-  height: 50vh;
+  height: 45vh;
   column-gap: 8px;
   align-items: center;
   justify-content: center;
 }
 
 #player-album-art {
-  margin-top: 15px;
   width: 31%;
-  height: 45vh;
+  height: 40vh;
 }
 
 @keyframes rotate {
@@ -180,7 +180,7 @@ color: var(--primary-color);
   to {
     transform: rotate(360deg);
   }
-}
+} 
 
 .rotate-image {
   animation: rotate 5s linear infinite;
@@ -192,13 +192,13 @@ color: var(--primary-color);
 
 #player-album-art img {
   width: 80%;
-  height: 43vh;
+  height: 40vh;
   display: block;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--primary-color);
   position: relative;
-  left: 30px;
+  left: 35px;
 }
 
 .player-display {
@@ -207,10 +207,10 @@ color: var(--primary-color);
   row-gap: 20px;
   padding: 14px;
   background-color: var(--background-color);
-  height: 45vh; 
-  width: 70%;
+  height: 42vh; 
+  width: 75%;
   position: relative;
-  right: 15px;
+  right: 25px;
 }
 
 .player-display-song-artist {
@@ -263,11 +263,11 @@ color: var(--primary-color);
 
 #player-song-artist {
   color: var(--highlight-color);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 #player-song-title {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   margin-bottom: 5px;
 }
 
@@ -362,7 +362,7 @@ color: var(--primary-color);
   color: var(--primary-color);
 }
 .playlist {
-  height: 40vh;
+  height: 50vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -635,7 +635,7 @@ color: var(--primary-color);
     .player-display {
       position: relative;
       right: 10px;
-      height: 25vh; /* Increased height to accommodate new elements */
+      height: 25vh; 
       width: 550px;
     }
     #search-form input {
@@ -689,6 +689,7 @@ color: var(--primary-color);
     margin: 0;
     padding: 0;
   }
+
 
   .container{
     /* display: none; */
