@@ -1,215 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="css/album.css">
-    <script src="js/album.js"></script>
-    <title>Music Player App</title>
-    <link rel="icon" href="img/broswer.png" type="image/jpg">
-</head>
-<body>
-    <nav class="nav-bar">
-        <div class="logo d-flex align-items-center justify-content-center pb-3">
-            <img src="../img/background.png" alt="Logo" class="me-2" style="width: 100px; height: 50px;">
-            <h1>MUSIC</h1>
-        </div>
-        <ul class="list-unstyled mt-4 ps-3">
-            <li class="mb-4">
-                <a href="index.html" class="active text-light text-decoration-none d-flex align-items-center">
-                    <i class="material-icons me-3">library_music</i>
-                    <span>Album</span>
-                </a>
-            </li>
-            <li class="mb-4">
-                <a href="pages/playlist.html" class="text-light text-decoration-none d-flex align-items-center">
-                    <i class="material-icons me-3">queue_music</i>
-                    <span>Playlist</span>
-                </a>
-            </li>
-            <li class="mb-4">
-                <a href="pages/setting.html" class="text-light text-decoration-none d-flex align-items-center">
-                    <i class="material-icons me-3">settings</i>
-                    <span>Setting</span>
-                </a>
-            </li>
-        </ul>
-  </nav>
-      <div class="main">
-        <div class="player-bar">
-          <div class="container-song">
-            <form action="#" id="search-form">
-              <input name="q" type="text" placeholder="Search New Song" autocomplete="off" autofocus>
-            </form>
-          </div>
-        </div>
-        <div id="popular-artists" class="section">
-          <h2>Popular Artists</h2>
-          <div class="grid">
-            <div class="artist-card">
-              <img src="/img/JeDavet.jpg" alt="Artist 1">
-              <div class="name">G-devith</div>
-            </div>
-            <div class="artist-card">
-              <img src="img/Tena.jpg" alt="Artist 2">
-              <div class="name">Tena</div>
-            </div>
-            <div class="artist-card">
-              <img src="img/Chansey Ma.jpg" alt="Artist 3">
-              <div class="name">Tan chan Seyma</div>
-            </div>
-            <div class="artist-card">
-              <img src="img/Vanda.jpg" alt="Artist 3">
-              <div class="name">Vanda</div>
-            </div>
-            <div class="artist-card">
-              <img src="img/Kanha.jpg" alt="Artist 3">
 
-              <div class="name">Aok Sokunkhan</div>
-            </div>
-          </div>
-        </div>
-        <div id="popular-albums" class="section">
-          <h2>Popular Albums</h2>
-          <div class="album-container">
-            <div class="album-card">
-              <img src="img/Taa Zvet.jpg" alt="Album 1">
-              <div class="info">
-                <div class="name">Taa Zvet</div>
-                <div class="title">ផ្សងជួបនារីសាមញ្ញធម្មតា</div>
-                <div class="time">Time: 4:54m</div>
-              </div>
-            </div>
-            <div class="album-card">
-              <img src="img/វង្វេង.webp" alt="Ly Ft JosieImanuel - វង្វេងក្នុងកែវភ្នែកអូន">
-              <div class="info">
-                <div class="name">JosieImanuel</div>
-                <div class="title">វង្វេងក្នុងកែវភ្នែកអូន</div>
-                <div class="time">Time: 2:05m</div>
-              </div>
-            </div>
-            <div class="album-card">
-              <img src="img/YCN.jpg" alt="YCN RAKHIE FT - ផ្កាស្លា🥰💐">
-              <div class="info">
-                <div class="name">YCN RAKHIE</div>
-                <div class="title">ផ្កាស្លា🥰💐</div>
-                <div class="time">Time: 4:25m</div>
-              </div>
-            </div>
-            <div class="album-card">
-              <img src="img/Han Record.jpg" alt="han Record - សាមញ្ញដូចបង">
-              <div class="info">
-                <div class="name">han Record</div>
-                <div class="title">សាមញ្ញដូចបង</div>
-                <div class="time">Time: 4:54m</div>
-              </div>
-            </div>
-            <div class="album-card">
-              <img src="img/Sovath.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Preap Sovath</div>
-                <div class="title">ថ្នមអើយថ្នម</div>
-                <div class="time">Time: 2:21m</div>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div id="albums-free" class="section">
-          <h2>Free Albums</h2>
-          <div class="free-album-card-container">
-            <div class="free-album-card">
-              <img src="img/nika.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Pichsonika</div>
-                <div class="title">ដោះលែងអូនណា</div>
-                <div class="time">Time: 4:22m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/srey.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">SenMie</div>
-                <div class="title">ប្រសូតស្នេហ៍</div>
-                <div class="time">Time: 5:40m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/sith.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Te Piseth</div>
-                <div class="title">ចុះរាល់ដង</div>
-                <div class="time">Time: 2:17m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/nisa.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Sokun Nisa</div>
-                <div class="title">ម្នាក់ស្រលាញ់ ម្នាក់អាណិត</div>
-                <div class="time">Time: 4:17m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/San Thank.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">sann Thanak</div>
-                <div class="title">អូសវ៉ាលី</div>
-                <div class="time">Time: 3:13m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/Noly Records.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Noly Records</div>
-                <div class="title">ធំជាងវេហា</div>
-                <div class="time">Time: 3:52m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/សំ​ សុវណ្ណារ៉ាក់.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Sovannarak</div>
-                <div class="title">THE_HOMIE_ដល់ចាស់</div>
-                <div class="time">Time: 2:21m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/niko.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Niko</div>
-                <div class="title">សង្ស័យ</div>
-                <div class="time">Time: 4:27m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/KDo P Sand.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name"> P sand</div>
-                <div class="title">ដឹងទេថានឹក</div>
-                <div class="time">Time: 8:09m</div>
-              </div>
-            </div>
-            <div class="free-album-card">
-              <img src="img/phea.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
-              <div class="info">
-                <div class="name">Pich Sophea</div>
-                <div class="title">កំលោះត្រឹមត្រូវ</div>
-                <div class="time">Time: 2:21m</div>
-              </div>
-            </div>
-          </div>
-        </div> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/album.css">
+  <script src="/js/album.js" defer></script>
+  <title>Music Player App</title>
+  <link rel="icon" href="img/broswer.png" type="image/jpg">
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="logo d-flex align-items-center justify-content-center pb-3">
+      <img src="../img/background.png" alt="Logo" class="me-2" style="width: 100px; height: 50px;">
+      <h1>MUSIC</h1>
+    </div>
+    <ul class="list-unstyled mt-4 ps-3">
+      <li class="mb-4">
+        <a href="index.html" class="active text-light text-decoration-none d-flex align-items-center">
+          <i class="material-icons me-3">library_music</i>
+          <span>Album</span>
+        </a>
+      </li>
+      <li class="mb-4">
+        <a href="pages/playlist.html" class="text-light text-decoration-none d-flex align-items-center">
+          <i class="material-icons me-3">queue_music</i>
+          <span>Playlist</span>
+        </a>
+      </li>
+      <li class="mb-4">
+        <a href="pages/setting.html" class="text-light text-decoration-none d-flex align-items-center">
+          <i class="material-icons me-3">settings</i>
+          <span>Setting</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="main">
+    <div class="player-bar">
+      <div class="container-song">
+        <form action="#" id="search-form">
+          <input name="q" type="text" placeholder="Search New Song" autocomplete="off" autofocus>
+        </form>
       </div>
     </div>
+
+    <div id="popular-artists" class="section">
+      <h2>Popular Artists</h2>
+      <div class="grid">
+        <div class="artist-card" data-url="pages/playlist.html">
+          <img src="/img/JeDavet.jpg" alt="Artist 1">
+          <div class="name">G-devith</div>
+        </div>
+        <div class="artist-card" data-url="pages/playlist.html">
+          <img src="img/Tena.jpg" alt="Artist 2">
+          <div class="name">Tena</div>
+        </div>
+        <div class="artist-card" data-url="pages/playlist.html">
+          <img src="img/Chansey Ma.jpg" alt="Artist 3">
+          <div class="name">Tan chan Seyma</div>
+        </div>
+        <div class="artist-card" data-url="pages/playlist.html">
+          <img src="img/Vanda.jpg" alt="Artist 4">
+          <div class="name">Vanda</div>
+        </div>
+        <div class="artist-card" data-url="pages/playlist.html">
+          <img src="img/Kanha.jpg" alt="Artist 5">
+          <div class="name">Aok Sokunkhan</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popular-albums" class="section">
+      <h2>Popular Albums</h2>
+      <div class="album-container">
+        <div class="album-card" data-url="pages/playlist.html">
+          <img src="img/Taa Zvet.jpg" alt="Album 1">
+          <div class="info">
+            <div class="name">Taa Zvet</div>
+            <div class="title">ផ្សងជួបនារីសាមញ្ញធម្មតា</div>
+            <div class="time">Time: 4:54m</div>
+          </div>
+        </div>
+        <div class="album-card" data-url="pages/playlist.html">
+          <img src="img/វង្វេង.webp" alt="Album 2">
+          <div class="info">
+            <div class="name">JosieImanuel</div>
+            <div class="title">វង្វេងក្នុងកែវភ្នែកអូន</div>
+            <div class="time">Time: 2:05m</div>
+          </div>
+        </div>
+        <div class="album-card" data-url="pages/playlist.html">
+          <img src="img/YCN.jpg" alt="Album 3">
+          <div class="info">
+            <div class="name">YCN RAKHIE FT</div>
+            <div class="title">ផ្កាស្លា🥰💐</div>
+            <div class="time">Time: 4:25m</div>
+          </div>
+        </div>
+        <div class="album-card" data-url="pages/playlist.html">
+          <img src="img/Han Record.jpg" alt="Album 4">
+          <div class="info">
+            <div class="name">han Record</div>
+            <div class="title">សាមញ្ញដូចបង</div>
+            <div class="time">Time: 4:54m</div>
+          </div>
+        </div>
+        <div class="album-card" data-url="pages/playlist.html">
+          <img src="img/Sovath.png" alt="Album 5">
+          <div class="info">
+            <div class="name">សំ​ សុវណ្ណារ៉ាក់</div>
+            <div class="title">THE_HOMIE_ដល់ចាស់</div>
+            <div class="time">Time: 2:21m</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Free Albums Section -->
+   <div id="albums-free" class="section">
+    <h2>Free Albums</h2>
+    <div class="free-album-card-container">
+     <!-- Each free album can be added as a card -->
+      <div class="free-album-card">
+        <img src="img/nika.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">Pichsonika</div>
+          <div class="title">ដោះលែងអូនណា</div>
+          <div class="time">Time: 4:22m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/srey.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">SenMie</div>
+          <div class="title">ប្រសូតស្នេហ៍</div>
+          <div class="time">Time: 5:40m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/sith.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">Te Piseth</div>
+          <div class="title">ចុះរាល់ដង</div>
+          <div class="time">Time: 2:17m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/nisa.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">Sokun Nisa</div>
+          <div class="title">ម្នាក់ស្រលាញ់ ម្នាក់អាណិត</div>
+          <div class="time">Time: 4:17m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/San Thank.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">sann Thanak</div>
+          <div class="title">អូសវ៉ាលី</div>
+          <div class="time">Time: 3:13m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/Noly Records.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">Noly Records</div>
+          <div class="title">ធំជាងវេហា</div>
+          <div class="time">Time: 3:52m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/សំ​ សុវណ្ណារ៉ាក់.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name"> Som Sovannarak</div>
+          <div class="title">THE_HOMIE_ដល់ចាស់</div>
+          <div class="time">Time: 2:21m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/niko.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">Niko</div>
+          <div class="title">សង្ស័យ</div>
+          <div class="time">Time: 4:27m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/KDo P Sand.jpg" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name"> P sand</div>
+          <div class="title">ដឹងទេថានឹក</div>
+          <div class="time">Time: 8:09m</div>
+        </div>
+      </div>
+      <div class="free-album-card">
+        <img src="img/phea.png" alt="សំ​ សុវណ្ណារ៉ាក់ - THE_HOMIE_ដល់ចាស់">
+        <div class="info">
+          <div class="name">Pich Sophea</div>
+          <div class="title">កំលោះត្រឹមត្រូវ</div>
+          <div class="time">Time: 2:21m</div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  </div>
 </body>
+
 </html>
