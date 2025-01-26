@@ -198,7 +198,7 @@ color: var(--primary-color);
   object-fit: cover;
   border: 2px solid var(--primary-color);
   position: relative;
-  left: 30px;
+  left: 35px;
 }
 
 .player-display {
