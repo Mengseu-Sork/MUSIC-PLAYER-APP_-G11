@@ -35,7 +35,7 @@ body {
 .nav-bar {
   background-color: #1b1b32;
   width: 20%;;
-  height: 99vh;
+  height: 99.7vh;
   position: fixed;
   margin-top: 1px;
   padding: 20px;
@@ -44,7 +44,7 @@ body {
 
 .logo{
   height: 50px;
-  width: 90%;
+  width: 75%;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@ margin-left: 20.2%;
 }
 
 .player {
-  height: 60vh;
+  height: 55vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -110,7 +110,7 @@ justify-content: space-between;
 align-items: center;
 padding: 0 2px;
 width: 100%;
-height: 30px;
+height: 40px;
 }
 
 .container-song {
@@ -168,9 +168,8 @@ color: var(--primary-color);
 }
 
 #player-album-art {
-  margin-top: 15px;
   width: 31%;
-  height: 45vh;
+  height: 40vh;
 }
 
 @keyframes rotate {
@@ -192,7 +191,7 @@ color: var(--primary-color);
 
 #player-album-art img {
   width: 80%;
-  height: 43vh;
+  height: 40vh;
   display: block;
   border-radius: 50%;
   object-fit: cover;
@@ -207,7 +206,7 @@ color: var(--primary-color);
   row-gap: 20px;
   padding: 14px;
   background-color: var(--background-color);
-  height: 45vh; 
+  height: 42vh; 
   width: 70%;
   position: relative;
   right: 15px;
@@ -262,11 +261,11 @@ color: var(--primary-color);
 
 #player-song-artist {
   color: var(--highlight-color);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 #player-song-title {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   margin-bottom: 5px;
 }
 
@@ -361,7 +360,7 @@ color: var(--primary-color);
   color: var(--primary-color);
 }
 .playlist {
-  height: 40vh;
+  height: 45vh;
   padding: 10px;
   display: flex;
   flex-direction: column;

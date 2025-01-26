@@ -33,8 +33,8 @@ body {
 }
 .nav-bar {
   background-color: #1b1b32;
-  width: 19.5%;;
-  height: 99vh;
+  width: 20%;;
+  height: 99.7vh;
   position: fixed;
   margin-top: 1px;
   padding: 20px;
@@ -43,13 +43,14 @@ body {
 
 .logo{
   height: 50px;
-  width: 90%;
+  width: 75%;
+  text-align: center;
 }
 
 
 .logo h1 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 26px;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-right: 20px;
   margin-top: 10px;
@@ -74,6 +75,8 @@ body {
   font-weight: bold;
   color: #f1be32 !important;
 }
+
+
 #search-form {
   width:100%;
   margin: 0;
@@ -108,7 +111,7 @@ body {
 color: var(--primary-color);
 }
  
-  
+  /*class main */
 .main {
     flex: 1;
     padding: 10px;
@@ -209,7 +212,7 @@ color: var(--primary-color);
   font-size: 0.8rem;
   color: #cfcfcf;
   margin: 5px 0;
-  min-height: 40px; /* Ensures the title section has uniform height */
+  min-height: 40px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,6 +256,92 @@ color: var(--primary-color);
   gap: 15px;
   
 }
+
+
+/* Responsive for Tablets and iPads */
+@media screen and (max-width: 1024px) {
+  .album-container, .free-album-card-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); /* 2 ជួរដេក */
+    gap: 10px; 
+    justify-content: center; 
+  }
+  .artist-card{
+    width: 100%;
+    height:auto;
+  }
+  
+
+  .album-card, .free-album-card {
+    width: 90%;
+    height: auto;
+    margin: 0 auto; 
+  }
+
+  .album-card img, .free-album-card img {
+    width: 100%; 
+    height: 280px; 
+    object-fit: cover; 
+  }
+  .main{
+    background-color: #1b1b32;
+    height: 406vh;
+  }
+  .nav-bar{
+    height: 406vh;
+  }
+}
+
+/* For Phones and Smaller Devices */
+@media screen and (max-width: 768px) {
+  .album-container, .free-album-card-container {
+    grid-template-columns: 1fr; /* Layout 1 card per row */
+    gap: 5px; 
+  }
+
+  
+/* Smaller width for small screens */
+  .album-card, .free-album-card {
+    width: 95%; 
+  }
+
+  .album-card img, .free-album-card img {
+    height: 180px; 
+  }
+
+  .main {
+    background-color: #1b1b32;
+    height: 600vh;
+  }
+
+  /* Adjust navbar text and icon font size */
+  .nav-bar {
+    font-size: 20px; 
+    
+  }
+
+  .nav-bar .icon {
+    font-size: 16px; 
+    margin-right: 50px;
+  }
+
+  .nav-bar a {
+    font-size: 12px; 
+  }
+
+  .nav-bar a, .nav-bar .icon {
+    padding: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
   
  
