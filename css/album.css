@@ -83,7 +83,7 @@ body {
 #search-form input {
   background-color: var(--app-background-color);
   color: var(--primary-color);
-  width: 880px;
+  width: 1190px;
   font-size: 14px;
   padding: 6px 15px;
   border: 1px solid rgb(103, 103, 103);
@@ -117,7 +117,7 @@ color: var(--primary-color);
     background-color: #1b1b32;
     margin-left: 20%;
     margin-top: 5px;
-   
+    
 }
 .container-song {
   padding: 0px;
@@ -164,6 +164,8 @@ color: var(--primary-color);
   overflow: hidden;
   width: 17%;
   margin: 5px;
+  justify-content: center;
+  
   text-align: center;
   color: #ffffff;
   margin-right: 16px;
@@ -256,18 +258,52 @@ color: var(--primary-color);
 
 
 /* Responsive for Tablets and iPads */
-@media screen and (max-width: 1024px) {
-  .album-container, .free-album-card-container {
+@media screen and (max-width: 768px) {
+  player-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+    width: 100%;
+    height: 30px;
+    }
+    
+    .container-song {
+      padding: 0px;
+      width: 100%;
+    }
+    #search-form {
+      width:100%;
+      margin: 0;
+    }
+    #search-form input {
+      background-color: var(--app-background-color);
+      color: var(--primary-color);
+      width: 100%;
+      font-size: 14px;
+      padding: 6px 15px;
+      border: 1px solid rgb(103, 103, 103);
+      border-radius: 2px;
+      position: relative;
+      top: 3px;
+    }
+
+  .album-container, .free-album-card-container,.grid{
     display: grid; 
     grid-template-columns: repeat(2, 1fr); /* 2 ជួរដេក */
     gap: 10px; 
     justify-content: center; 
   }
   .artist-card{
-    width: 100%;
+    width: 90%;
     height:auto;
   }
-  
+  .artist-card:nth-child(5){
+    display: none;
+  }
+  .album-card:nth-child(5){
+    display: none;
+  }
 
   .album-card, .free-album-card {
     width: 90%;
@@ -282,54 +318,109 @@ color: var(--primary-color);
   }
   .main{
     background-color: #1b1b32;
-    height: 406vh;
+    height: auto;
   }
   .nav-bar{
-    height: 406vh;
+    background-color: var(--background-color);
+    width: 20%;
+    margin-top: 5px;
+    padding: 10px;
+    border-bottom: 2px solid var(--foreground-color);
+    position: fixed;
+    height: 99.9vh;
   }
+  .logo {
+    height: 5vh;
+    width: 100%;
+  }
+  .logo img{
+    width: 60px;
+    height: 40px;
 }
+  .logo h1{
+    font-weight: bold;
+    font-family: var(--font-headline);
+    font-size: 14px;
+}
+  .nav-bar ul{
+    padding: 5px;
+    font-size: 0.7rem;
+  }
 
+}
 /* For Phones and Smaller Devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .album-container, .free-album-card-container {
-    grid-template-columns: 1fr; /* Layout 1 card per row */
+    grid-template-columns: 1fr;
     gap: 5px; 
   }
 
-  
-/* Smaller width for small screens */
+  /* Smaller width for album cards */
   .album-card, .free-album-card {
-    width: 95%; 
+    width: 80%; 
+    margin-left: 40px;
   }
 
+  /* Adjust image size in album cards */
   .album-card img, .free-album-card img {
-    height: 180px; 
+    height: 150px; 
+    width: 100%;
+  }
+  .main{
+    margin-right: auto;
+    width: 100%;
+    height: auto;
   }
 
-  .main {
-    background-color: #1b1b32;
-    height: 600vh;
+  /* Main section adjustments */
+
+  body {
+    background-color: var(--foreground-color);
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
   }
 
-  /* Adjust navbar text and icon font size */
   .nav-bar {
-    font-size: 20px; 
-    
+    width: 100%;
+    height: 8vh; 
+    padding: 1px; 
+    position: fixed;
+    bottom: 0;
+    border: none;
+    background-color: #1b1b32; 
+    z-index: 1000;
   }
 
-  .nav-bar .icon {
-    font-size: 16px; 
-    margin-right: 50px;
-  }
-
-  .nav-bar a {
-    font-size: 12px; 
-  }
-
-  .nav-bar a, .nav-bar .icon {
+  .nav-bar ul {
+    background-color: #1b1b32;
+    width: 100%;
     padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: none;
   }
+
+  .nav-bar ul li a span {
+    display: none;
+  }
+  .nav-bar ul li a i{
+    position: relative;
+    bottom: 65px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo img, .logo h1 {
+    display: none;
+  }
+
+  
 }
+
+
 
 
 

@@ -10,14 +10,15 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBGyMdwXdC0xFow0aQX6OhF8Krz2IRZEp0",
-  authDomain: "music-player-app-8f873.firebaseapp.com",
-  databaseURL: "https://music-player-app-8f873-default-rtdb.firebaseio.com",
-  projectId: "music-player-app-8f873",
-  storageBucket: "music-player-app-8f873.firebasestorage.app",
-  messagingSenderId: "719541221058",
-  appId: "1:719541221058:web:ad119eee1d0ecb7e0c2d5b"
+  apiKey: "AIzaSyBPqtW45avyAsW2VKQvtPho2bWYUKr9b-s",
+  authDomain: "music-player-3dbaa.firebaseapp.com",
+  databaseURL: "https://music-player-3dbaa-default-rtdb.firebaseio.com",
+  projectId: "music-player-3dbaa",
+  storageBucket: "music-player-3dbaa.firebasestorage.app",
+  messagingSenderId: "446602459254",
+  appId: "1:446602459254:web:26009c879e7ed1688fc757"
 };
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
@@ -27,8 +28,7 @@ const db = getFirestore(app);
 // Function to add data to Firestore
 async function addData(data) {
   try {
-    const docRef = await addDoc(collection(db, "music_song"), {
-      id: data.id,
+    const docRef = await addDoc(collection(db, "music_player"), {
       title: data.title,
       artist: data.artist,
       duration: data.duration,
@@ -42,16 +42,16 @@ async function addData(data) {
   }
 }
 
-fetch("../database/datasong.json")
-  .then((response) => response.json())
-  .then((data) => {
-    data.forEach((song) => {
-        addData(song);
-    });
-  });
-// // Function to fetch data from Firestore
+// fetch("../database/datasong.json")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     data.forEach((song) => {
+//         addData(song);
+//     });
+//   });
+// Function to fetch data from Firestore
 async function fetchData() {
-    const querySnapshot = await getDocs(collection(db, "music_song"));
+    const querySnapshot = await getDocs(collection(db, "music_player"));
     querySnapshot.forEach((doc) => {
       const data = doc.data();
       console.log("Fetching data: ", data);
@@ -60,4 +60,3 @@ async function fetchData() {
 
   // Call the function to fetch data
   fetchData();
-
